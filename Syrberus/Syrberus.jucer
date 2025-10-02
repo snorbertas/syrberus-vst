@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="gLcLn4" name="Syrberus" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginCharacteristicsValue="pluginIsSynth,pluginWantsMidiIn">
+  <MAINGROUP id="XVPhgx" name="Syrberus">
+    <GROUP id="{80F24805-DAE7-7053-A36F-5F4096959096}" name="Images">
+      <FILE id="pzPD5K" name="logo.png" compile="0" resource="1" file="Resources/logo.png"/>
+    </GROUP>
+    <GROUP id="{4C4E76CB-E6BF-B613-4115-BBDED72EA75B}" name="Source">
+      <GROUP id="{C95D05AE-C941-5C1B-53AF-BDBED802F127}" name="Dubu">
+        <FILE id="s4r6Tu" name="Envelope.cpp" compile="1" resource="0" file="Source/Envelope.cpp"/>
+        <FILE id="a14Y99" name="Envelope.h" compile="0" resource="0" file="Source/Envelope.h"/>
+        <FILE id="F6uCxE" name="EnvelopeEditor.cpp" compile="1" resource="0"
+              file="Source/EnvelopeEditor.cpp"/>
+        <FILE id="KBZJOp" name="EnvelopeEditor.h" compile="0" resource="0"
+              file="Source/EnvelopeEditor.h"/>
+      </GROUP>
+      <GROUP id="{C1D8B985-81FB-4823-EC05-8802414FA1A6}" name="GUI">
+        <FILE id="tdAEIb" name="DebugInfo.cpp" compile="1" resource="0" file="Source/DebugInfo.cpp"/>
+        <FILE id="HYVjH8" name="DebugInfo.h" compile="0" resource="0" file="Source/DebugInfo.h"/>
+        <FILE id="ncgJj7" name="WavePreview.cpp" compile="1" resource="0" file="Source/WavePreview.cpp"/>
+        <FILE id="yzciuc" name="WavePreview.h" compile="0" resource="0" file="Source/WavePreview.h"/>
+        <FILE id="ZdHUkU" name="ShapeSelectButton.cpp" compile="1" resource="0"
+              file="Source/ShapeSelectButton.cpp"/>
+        <FILE id="L2X1RU" name="ShapeSelectButton.h" compile="0" resource="0"
+              file="Source/ShapeSelectButton.h"/>
+        <FILE id="nzn6GC" name="MainLookAndFeel.cpp" compile="1" resource="0"
+              file="Source/MainLookAndFeel.cpp"/>
+        <FILE id="Zefv94" name="MainLookAndFeel.h" compile="0" resource="0"
+              file="Source/MainLookAndFeel.h"/>
+      </GROUP>
+      <GROUP id="{1596FDD5-51BA-10A7-5EF1-03C956A79131}" name="Synth">
+        <FILE id="AJZoJf" name="SyrberusOscillator.cpp" compile="1" resource="0"
+              file="Source/SyrberusOscillator.cpp"/>
+        <FILE id="AYfaqI" name="SyrberusOscillator.h" compile="0" resource="0"
+              file="Source/SyrberusOscillator.h"/>
+        <FILE id="n3hSUJ" name="SyrberusSynth.cpp" compile="1" resource="0"
+              file="Source/SyrberusSynth.cpp"/>
+        <FILE id="dEjSxO" name="SyrberusSynth.h" compile="0" resource="0" file="Source/SyrberusSynth.h"/>
+      </GROUP>
+      <FILE id="aLCMaQ" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
+      <FILE id="chYiku" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="wXd5kF" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      <FILE id="rHJlkS" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="jKdhOa" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="Syrberus"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="Syrberus"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+</JUCERPROJECT>
